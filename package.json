@@ -1,0 +1,37 @@
+{
+  "name": "larkplayer-play-muted",
+  "version": "1.0.0",
+  "description": "A UI plugin to interact with user when play muted",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dblate/larkplayer-play-muted.git"
+  },
+  "keywords": [
+    "larkplayer",
+    "larkplayer-play-muted",
+    "html5",
+    "player",
+    "video"
+  ],
+  "author": "2222bnting",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/dblate/larkplayer-play-muted/issues"
+  },
+  "homepage": "https://github.com/dblate/larkplayer-play-muted#readme",
+  "dependencies": {
+    "larkplayer": "^1.5.1"
+  },
+  "devDependencies": {
+    "babel-plugin-transform-react-jsx": "^6.24.1",
+    "fis-optimizer-uglify-js": "^0.2.3",
+    "fis-parser-babel-6.x": "^6.24.1",
+    "fis-parser-less": "^0.1.3",
+    "fis3": "^3.4.39",
+    "fis3-preprocessor-js-require-css": "^0.1.3"
+  }
+}
