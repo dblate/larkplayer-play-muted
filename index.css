@@ -8,11 +8,16 @@
     background: rgba(255, 255, 255, 0.9);
     overflow: hidden;
     transform: translateZ(0);
+    cursor: pointer;
 }
 
 .larkplayer-play-muted-shrink {
-    animation: shrink 300ms ease 1 forwards;
-    -webkit-animation: shrink 300ms ease 1 forwards;
+    animation: shrink 300ms ease 3s 1 forwards;
+    -webkit-animation: shrink 300ms ease 3s 1 forwards;
+}
+
+.larkplayer-play-muted-hide {
+    display: none;
 }
 
 .larkplayer-play-muted-inner-box {

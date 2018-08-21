@@ -17,13 +17,19 @@ class MutedBtn extends Component {
         this.aniClass = 'larkplayer-play-muted-shrink';
         this.handleFirstplay = this.handleFirstplay.bind(this);
         this.handleClick = this.handleClick.bind(this);
+        this.handleReady = this.handleReady.bind(this);
 
         this.initialEvents();
     }
 
     initialEvents() {
+        this.player.on('ready', this.handleReady);
         this.player.on('firstplay', this.handleFirstplay);
         this.on('click', this.handleClick);
+    }
+
+    handleReady() {
+        this.player.muted() ? this.showMutedBtn() : this.hideMutedBtn();
     }
 
     handleFirstplay() {
@@ -41,19 +47,20 @@ class MutedBtn extends Component {
     }
 
     showMutedBtn() {
-        this.removeClass(this.hideClass);
+        DOM.removeClass(this.el, this.hideClass);
     }
 
     resetAni() {
-        this.removeClass(this.aniClass);
-        this.addClass(this.aniClass);
+        DOM.removeClass(this.el, this.aniClass);
+        DOM.addClass(this.el, this.aniClass);
     }
 
     hideMutedBtn() {
-        this.addClass(this.hideClass);
+        DOM.addClass(this.el, this.hideClass);
     }
 
     dispose() {
+        this.player.off('ready', this.handleReady);
         this.player.off('firstplay', this.handleFirstplay);
         this.off('click', this.handleClick);
 
@@ -62,7 +69,7 @@ class MutedBtn extends Component {
 
     createEl() {
         return (
-            <div className="larkplayer-play-muted">
+            <div className="larkplayer-play-muted larkplayer-play-muted-hide" title="取消静音">
                 <div className="larkplayer-play-muted-inner-box">
                     <div className="larkplayer-play-muted__icon">
                     </div>
