@@ -1,16 +1,27 @@
 # larkplayer-play-muted
 
-当前部分浏览器（chrome safari..）允许视频在静音状态下自动播放，此插件旨在视频静音播放时为用户提供提示以及快速取消静音的方式。
+<img src="./img/screenshot.png" width="427" height="240" align="center"  />
+
+当视频静音播放时，为用户提供提示以及快速取消静音的方式
 
 ## 下载
 
-```
+#### NPM
+```bash
 npm install larkplayer-play-muted
 ```
-## 使用
-需在 [larkplayer](https://github.com/dblate/larkplayer) 之后加载
 
-以 script 的方式可以直接查看此[示例](https://dblate.github.io/larkplayer-play-muted/test.html)，
+#### CDN
+```html
+<script type="text/javascript" src="https://unpkg.com/larkplayer-play-muted@latest/dist/index.js"></script>
+```
+
+## 使用
+
+该插件需在 [larkplayer](https://github.com/dblate/larkplayer) 之后加载
+
+以 script 的方式可以直接查看此[示例](https://dblate.github.io/larkplayer-play-muted/test.html)
+
 以模块化的方式，直接 import 即可
 
 ```
