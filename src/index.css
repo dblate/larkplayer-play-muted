@@ -29,7 +29,7 @@
     float: left;
     width: 32px;
     height: 30px;
-    background: url('./muted.png') center no-repeat;
+    background: url('../img/muted.png') center no-repeat;
     background-size: 16px 13.3px;
 }
 
