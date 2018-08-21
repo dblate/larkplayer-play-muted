@@ -6,7 +6,7 @@
  */
 
 
-require('./index.less');
+import './index.css';
 import {Component, Plugin, DOM} from 'larkplayer';
 
 class MutedBtn extends Component {

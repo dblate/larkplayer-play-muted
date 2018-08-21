@@ -1,0 +1,60 @@
+.larkplayer-play-muted {
+    position: absolute;
+    left: 10px;
+    top: 10px;
+    width: 120px;
+    box-shadow: 0 0.67px 1px 0 rgba(0,0,0,0.30);
+    border-radius: 3px;
+    background: rgba(255, 255, 255, 0.9);
+    overflow: hidden;
+    transform: translateZ(0);
+}
+
+.larkplayer-play-muted-shrink {
+    animation: shrink 300ms ease 1 forwards;
+    -webkit-animation: shrink 300ms ease 1 forwards;
+}
+
+.larkplayer-play-muted-inner-box {
+    width: 120px;
+    float: left;
+}
+
+.larkplayer-play-muted__icon {
+    float: left;
+    width: 32px;
+    height: 30px;
+    background: url('./muted.png') center no-repeat;
+    background-size: 16px 13.3px;
+}
+
+.larkplayer-play-muted__text {
+    float: left;
+    width: 80px;
+    font-size: 13px;
+    text-align: center;
+    line-height: 30px;
+    height: 30px;
+    white-space: nowrap;
+}
+
+@keyframes shrink {
+    from {
+        width: 120px;
+    }
+    to {
+        width: 32px;
+    }
+}
+
+@-webkit-keyframes shrink {
+    from {
+        width: 120px;
+    }
+    to {
+        width: 32px;
+    }
+}
+
+
+

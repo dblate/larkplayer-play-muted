@@ -2,7 +2,7 @@
   "name": "larkplayer-play-muted",
   "version": "1.0.0",
   "description": "A UI plugin to interact with user when play muted",
-  "main": "index.js",
+  "main": "./dist/index.min.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
@@ -24,14 +24,23 @@
   },
   "homepage": "https://github.com/dblate/larkplayer-play-muted#readme",
   "dependencies": {
+    "babel-core": "^6.26.3",
+    "babel-loader": "^7.1.5",
+    "babel-preset-env": "^1.7.0",
     "larkplayer": "^1.5.1"
   },
   "devDependencies": {
     "babel-plugin-transform-react-jsx": "^6.24.1",
+    "css-loader": "^1.0.0",
     "fis-optimizer-uglify-js": "^0.2.3",
     "fis-parser-babel-6.x": "^6.24.1",
     "fis-parser-less": "^0.1.3",
     "fis3": "^3.4.39",
-    "fis3-preprocessor-js-require-css": "^0.1.3"
+    "fis3-preprocessor-js-require-css": "^0.1.3",
+    "less-loader": "^4.1.0",
+    "style-loader": "^0.22.1",
+    "transform-loader": "^0.2.4",
+    "url-loader": "^1.1.1",
+    "webpack": "^4.16.5"
   }
 }
